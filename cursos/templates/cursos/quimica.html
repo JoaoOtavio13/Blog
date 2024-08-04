@@ -4,22 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quimica</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            margin-left: 2%;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            margin-left: -2%;
+        }
+        div,li h3{
+            display: flex;
+            margin-left: -3% ;
+        }
+        div h3{
+            margin-left:2% ;
+        }
+        #cidades li{
+            text-decoration: none;
+            color: #4CAF50;
+            font-weight: bold;
+            margin-left: 1%;
+            flex-direction:initial;
+        }
+        li{
+            list-style: none;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: right;
+            margin-left: -2%;
+        }
+        footer p {
+            margin-right: 1%;
+        }       
+    </style>
 </head>
 <body>
     <header>
         <h1>Química</h1>
         <h2>Curso: Licenciatura</h2>
+    </header>
         <nav>
             <ul>
-                <li><h3>Carga horária: 3404h</h3></li>
-                <li><h3>Duração: Quatro anos</h3></li>
-                <li><h3>Tipo de ensino: Presencial</h3></li>
-                <li><h3>Oferta em:</h3></li>
                 <div>
-                    <li><a href="">Pau dos Ferros</a></li>
-                    <li><a href="">Currais Novos</a></li>
-                    <li><a href="">Inpagançu</a></li>
-                    <li><a href="">Apodi</a></li>
+                    <li><h3>Carga horária: 3404h</h3></li>
+                    <li><h3>Duração: Quatro anos</h3></li>
+                    <li><h3>Tipo de ensino: Presencial</h3></li>
+                </div>
+                <li><h3>Oferta em:</h3></li>
+                <div id="cidades">
+                    <li>Pau dos Ferros</li>
+                    <li>Currais Novos</li>
+                    <li>Inpagançu</li>
+                    <li>Apodi</li>
                 </div>
             </ul>
         </nav>
