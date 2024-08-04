@@ -3,30 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Início</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #inicio {
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+        }
+
+        main {
+            padding: 1rem;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #4CAF50;
+            font-weight: bold;
+            margin-left: -3%;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: right;
+        }
+        footer p {
+            margin-right: 1%;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>IFRN</h1>
-    </header>
-    <main>
-        <h2>Processos seletivos</h2>
-        <p>O IFRN oferece anualmente mais de seis mil vagas em cursos de diferentes níveis e modalidades, permitindo que estudantes se candidatem por meio de processos seletivos internos ou pelo SiSU, utilizando as notas do Enem. Além disso, a instituição coordena seleções para novos servidores efetivos, pessoal temporário e ainda oportunidades de bolsas, auxílios e participação em projetos. As pessoas interessadas podem utilizar os filtros disponíveis no sistema de busca para encontrar as informações desejadas.</p>
-        <p>Selecione um dos cursos abaixo para obter mais informações:</p>
-        <nav>
-            <ul>
-                <li><a href="{% url 'ads' %}">Curso de Tecnologia em Análise e Desenvolvimento de Sistema</a></li>
-                <li><a href="{% url 'alimentos' %}">Curso de Alimentos</a></li>
-                <li><a href="{% url 'quimica' %}">Curso de Quimica</a></li>
-            </ul>
-        </nav>
-    </main>
-    <footer>
-        <p>Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Norte - Reitoria</p>
-        <p>Endereço:Rua Dr. Nilo Bezerra Ramalho, 1692, Tirol
-        <p>CEP:59015-300</p>
-        <p>E-mail:comunicacao.reitoria@ifrn.edu.br</p>
-        <p>Telefone:(84) 4005-0890</p>
-    </footer>
+    <div id="inicio">
+        <header>
+            <h1>Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Norte</h1>
+        </header>
+        <main>
+            <h2>Processos seletivos</h2>
+            <p>O IFRN oferece anualmente mais de seis mil vagas em cursos de diferentes níveis e modalidades, permitindo que estudantes se candidatem por meio de processos seletivos internos ou pelo SiSU, utilizando as notas do Enem. Além disso, a instituição coordena seleções para novos servidores efetivos, pessoal temporário e ainda oportunidades de bolsas, auxílios e participação em projetos. As pessoas interessadas podem utilizar os filtros disponíveis no sistema de busca para encontrar as informações desejadas.</p>
+            <p>Selecione um dos cursos abaixo para obter mais informações:</p>
+            <nav>
+                <ul>
+                    <li><a href="{% url 'ads' %}">Curso de Tecnologia em Análise e Desenvolvimento de Sistema</a></li>
+                    <li><a href="{% url 'alimentos' %}">Curso de Alimentos</a></li>
+                    <li><a href="{% url 'quimica' %}">Curso de Quimica</a></li>
+                </ul>
+            </nav>
+        </main>
+        <footer>
+            <p>Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Norte - Reitoria</p>
+            <p>Endereço: Rua Dr. Nilo Bezerra Ramalho, 1692, Tirol</p>
+            <p>CEP: 59015-300</p>
+            <p>E-mail: comunicacao.reitoria@ifrn.edu.br</p>
+            <p>Telefone: (84) 4005-0890</p>
+        </footer>
+    </div>
 </body>
 </html>
