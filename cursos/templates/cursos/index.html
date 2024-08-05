@@ -20,14 +20,21 @@
         }
 
         header {
+            margin-bottom: 5%;
             background-color: #4CAF50;
             color: white;
             text-align: center;
         }
 
         main {
+            margin-top: 1%;
             padding: 1rem;
         }
+
+        main h2 p{
+            margin-bottom:20% ;
+        }
+
 
         h2 {
             color: #333;
@@ -45,6 +52,7 @@
         }
 
         footer {
+            margin-top: 10%;
             background-color: #333;
             color: white;
             text-align: right;
@@ -62,8 +70,9 @@
         <main>
             <h2>Processos seletivos</h2>
             <p>O IFRN oferece anualmente mais de seis mil vagas em cursos de diferentes níveis e modalidades, permitindo que estudantes se candidatem por meio de processos seletivos internos ou pelo SiSU, utilizando as notas do Enem. Além disso, a instituição coordena seleções para novos servidores efetivos, pessoal temporário e ainda oportunidades de bolsas, auxílios e participação em projetos. As pessoas interessadas podem utilizar os filtros disponíveis no sistema de busca para encontrar as informações desejadas.</p>
-            <p>Selecione um dos cursos abaixo para obter mais informações:</p>
+            
             <nav>
+                <p>Selecione um dos cursos abaixo para obter mais informações:</p>
                 <ul>
                     <li><a href="{% url 'ads' %}">Curso de Tecnologia em Análise e Desenvolvimento de Sistema</a></li>
                     <li><a href="{% url 'alimentos' %}">Curso de Alimentos</a></li>
